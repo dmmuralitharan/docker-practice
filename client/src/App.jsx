@@ -6,7 +6,7 @@ function App() {
   const [meg, setMeg] = useState('')
 
   useEffect(() => {
-    axios.get("http://localhost:3000/").then((res) => {
+    axios.get("http://localhost:5000/").then((res) => {
       console.log(res.data.data);
 
       setMeg(res.data.data)
